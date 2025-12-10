@@ -22,7 +22,6 @@ my-business-web
 │ ├── screen-about.png
 │ ├── screen-services.png
 │ ├── screen-contact.png
-│
 └── README.md
 
 ---
