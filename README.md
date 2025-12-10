@@ -40,7 +40,7 @@ my-business-web
 - Footer พร้อมลิงก์เมนู
 
 **ภาพหน้าเว็บ:**  
-_(screen-index.png)_
+![หน้าจอหน้าแรก](images/screen-index.png)
 
 ---
 
@@ -54,7 +54,7 @@ _(screen-index.png)_
 - ลิงก์กลับหน้าแรก
 
 **ภาพหน้าเว็บ:**  
-_(screen-about.png)_
+![หน้าจอเกี่ยวกับ](images/screen-about.png)
 
 ---
 
@@ -72,7 +72,7 @@ _(screen-about.png)_
   - ราคาโดยประมาณ
 
 **ภาพหน้าเว็บ:**  
-_(screen-services.png)_
+![หน้าบริการ](images/screen-services.png)
 
 ---
 
@@ -86,7 +86,7 @@ _(screen-services.png)_
 - ลิงก์กลับหน้าแรก
 
 **ภาพหน้าเว็บ:**  
-_(screen-contact.png)_
+![หน้าติดต่อ](images/screen-contact.png)
 
 ---
 
