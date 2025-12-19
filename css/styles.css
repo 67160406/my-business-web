@@ -334,3 +334,12 @@ label {
   margin-bottom: 0.25rem;
   font-weight: 500;
 }
+
+/* Footer */
+footer {
+  background-color: #e91e9f;
+  color: #ffe4f2;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 4rem;
+}
