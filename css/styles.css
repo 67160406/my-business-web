@@ -56,6 +56,16 @@ a:hover {
 /* ========================
  LAYOUT & CONTAINERS
  ======================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* จัดให้อยู่กลาง */
+  padding: 2rem 1rem; /* vertical / horizontal */
+}
+
+.section {
+  margin: 3rem 0; /* ระยะห่างระหว่างแต่ละ section */
+}
 
 /* ========================
  COMPONENTS (HEADER, NAV, CARD, etc.)
