@@ -343,3 +343,25 @@ footer {
   padding: 2.5rem 1rem;
   margin-top: 4rem;
 }
+
+/* ========================
+   RESPONSIVE / MEDIA QUERIES
+======================== */
+@media (max-width: 768px) {
+  .header.container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
