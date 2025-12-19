@@ -1,12 +1,15 @@
 /* ========================
  RESET & DEFAULTS
  ======================== */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 html {
   font-size: 16px;
 }
@@ -17,3 +20,47 @@ body {
   background-color: #fff5fb;
   color: #333;
 }
+/* ========================
+ TYPOGRAPHY
+ ======================== */
+h1 {
+  font-size: 2.5rem;
+  color: #ff75ba;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff75ba;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #3a262d;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #5a3cbf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+ LAYOUT & CONTAINERS
+ ======================== */
+
+/* ========================
+ COMPONENTS (HEADER, NAV, CARD, etc.)
+ ======================== */
+
+/* ========================
+ RESPONSIVE / MEDIA QUERIES
+ ======================== */
