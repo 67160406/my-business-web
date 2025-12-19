@@ -7,59 +7,77 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <div id="header" class="header">
-        <img src="images/logo.png" alt="logo" class="header-logo" />
-
-        <div>
-          <h1 class="page-title">ช่องทางติดต่อ Haruto CosRent</h1>
+    <header id="header">
+      <div class="header container">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" class="header-logo" />
+          <div class="site-text">
+            <h1 class="site-title">CosplayRent</h1>
+            <p class="site-tagline">ร้านเช่าชุดคอสเพลย์ออนไลน์</p>
+          </div>
         </div>
-      </div>
-      <br />
 
-      <nav>
-        <a href="index.html">กลับหน้าแรก</a>
-      </nav>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+            <li><a href="services.html">บริการ</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
-      <!-- 4.1 Contact Form พร้อม validation -->
+      <!-- 4.1 Contact Form -->
       <section class="section">
-        <h2>แบบฟอร์มติดต่อ</h2>
-        <form class="section" action="/register" method="POST">
+        <div class="section-title">
+          <h2>แบบฟอร์มติดต่อ</h2>
+        </div>
+
+        <form action="/register" method="POST">
           <fieldset>
             <legend>ข้อมูลส่วนตัว</legend>
-            <label for="fname">ชื่อจริง:</label>
-            <input type="text" id="fname" name="firstname" required />
-            <label for="lname">นามสกุล:</label>
-            <input type="text" id="lname" name="lastname" required /><br />
-            <label for="email">อีเมล:</label>
-            <input type="email" id="email" name="email" required /><br />
 
-            <label for="message">ข้อมูลเพิ่มเติม:</label><br />
-            <textarea name="" id=""></textarea><br />
+            <label for="fname">ชื่อจริง:</label>
+            <input type="text" id="fname" required />
+
+            <label for="lname">นามสกุล:</label>
+            <input type="text" id="lname" required />
+
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" required />
+
+            <label for="message">ข้อมูลเพิ่มเติม:</label>
+            <textarea></textarea>
+
             <button type="submit">ส่งข้อมูล</button>
-            <button type="reset">ยกเลิก</button>
           </fieldset>
         </form>
       </section>
 
-      <!-- 4.2 ที่อยู่ของบริษัท -->
+      <!-- 4.2 ที่อยู่ -->
       <section class="section">
-        <h2>ที่อยู่</h2>
+        <div class="section-title">
+          <h2>ที่อยู่ร้าน</h2>
+        </div>
+
         <address>
           Haruto CosRent 169 ถนนลงหาดบางแสน ตำบลแสนสุข อำเภอเมืองชลบุรี
           จังหวัดชลบุรี 20130
         </address>
       </section>
 
-      <!-- 4.3 แผนที่ (embed Google Maps ตัวอย่าง) -->
+      <!-- 4.3 แผนที่ -->
       <section class="section">
-        <h2>แผนที่</h2>
+        <div class="section-title">
+          <h2>แผนที่</h2>
+        </div>
+
         <iframe
           class="map"
-          title="แผนที่ CosplayRent"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7766.064188449103!2d100.92202760505648!3d13.28593502031112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b4e7c351968b%3A0xf03d84bc0dd30c0!2sBurapha%20University!5e0!3m2!1sen!2sth!4v1765372648355!5m2!1sen!2sth"
+          title="แผนที่ Haruto CosRent"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7766.064188449103!2d100.92202760505648!3d13.28593502031112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b4e7c351968b%3A0xf03d84bc0dd30c0!2sBurapha%20University!5e0!3m2!1sth!2sth!4v1765372648355"
           allowfullscreen
           loading="lazy"
         ></iframe>

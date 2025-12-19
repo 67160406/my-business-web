@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <div id="header" class="header">
-        <img src="images/logo.png" alt="logo" class="header-logo" />
-
-        <div>
-          <h1 class="page-title">บริการ Haruto CosRent</h1>
+    <header id="header">
+      <div class="header container">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" class="header-logo" />
+          <div class="site-text">
+            <h1 class="site-title">CosplayRent</h1>
+            <p class="site-tagline">ร้านเช่าชุดคอสเพลย์ออนไลน์</p>
+          </div>
         </div>
-      </div>
-      <br />
 
-      <nav>
-        <a href="index.html">กลับหน้าแรก</a>
-      </nav>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+            <li><a href="services.html">บริการ</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
       <!-- 3.1 รายการบริการ -->
-      <section class="section" aria-labelledby="list-services">
-        <h2 id="list-services">รายการบริการ</h2>
+      <section class="section">
+        <div class="section-title">
+          <h2 id="list-services">รายการบริการ</h2>
+        </div>
+
         <ul>
           <li>เช่าชุดสำหรับเทส</li>
           <li>เช่าชุดสำหรับไพรเวท</li>
@@ -33,40 +42,29 @@
         </ul>
       </section>
 
-      <!-- 3.2 ใช้ <section> สำหรับแต่ละบริการ -->
-      <section class="section" aria-labelledby="svc-standard">
-        <h3 id="svc-standard">เช่าชุดสำหรับเทส</h3>
-        <p>
-          เหมาะสำหรับคอสเพลย์มือใหม่
-          หรือต้องการแต่งคอสเพื่อถ่ายรูปอยู่ในพื้นที่ปิด ราคาเช่าถูกที่สุด!!!
-        </p>
-      </section>
+      <!-- 3.2 รายละเอียดบริการ -->
+      <section class="section">
+        <div class="section-title">
+          <h2>รายละเอียดบริการ</h2>
+        </div>
 
-      <section class="section" aria-labelledby="svc-premium">
-        <h3 id="svc-premium">เช่าชุดสำหรับไพรเวท</h3>
-        <p>
-          เหมาะสำหรับคอสเพลย์เยอร์ที่ต้องการแต่งคอสเพื่อถ่านงาน คอนเท้น
-          หรือร่วมงานคอสเพลย์ในพื้นที่เปิด
-        </p>
-      </section>
+        <h3>เช่าชุดสำหรับเทส</h3>
+        <p>เหมาะสำหรับมือใหม่ หรือถ่ายภาพในพื้นที่ส่วนตัว</p>
 
-      <section class="section" aria-labelledby="svc-addons">
-        <h3 id="svc-addons">ฝากปล่อยเช่า</h3>
-        <p>
-          เหมาะสำหรับผู้ที่มีชุด-วิกคอสเพลย์แต่ไม่ต้องการขาย
-          ทางเรามีบริการดูแลชุด-วิกให้ พร้อมปล่อยเช่าหากำไรให้คุณลูกค้า
-        </p>
+        <h3>เช่าชุดสำหรับไพรเวท</h3>
+        <p>เหมาะสำหรับงานคอสเพลย์ งานอีเวนต์ หรือพื้นที่สาธารณะ</p>
+
+        <h3>ฝากปล่อยเช่า</h3>
+        <p>เราช่วยดูแลชุดและวิก พร้อมปล่อยเช่าแทนคุณ</p>
       </section>
 
       <!-- 3.3 Table เปรียบเทียบแพ็กเกจ -->
-      <section class="services section">
-        <h2>เปรียบเทียบแพ็กเกจเช่าชุดคอสเพลย์</h2>
+      <section class="section">
+        <div class="section-title">
+          <h2>เปรียบเทียบแพ็กเกจเช่าชุดคอสเพลย์</h2>
+        </div>
 
-        <table summary="เปรียบเทียบแพ็กเกจเช่าชุดคอสเพลย์" class="price-table">
-          <caption class="table-caption">
-            ตารางเปรียบเทียบแพ็กเกจบริการเช่าชุด
-          </caption>
-
+        <table class="price-table" summary="เปรียบเทียบแพ็กเกจเช่าชุดคอสเพลย์">
           <thead>
             <tr>
               <th>คุณสมบัติ</th>
@@ -77,33 +75,33 @@
 
           <tbody>
             <tr>
-              <th>ระยะเวลาเช่า</th>
+              <th scope="row">ระยะเวลาเช่า</th>
               <td>3 วัน</td>
               <td>5 วัน</td>
             </tr>
 
             <tr>
-              <th>รวมพร็อพ/รองเท้า</th>
+              <th scope="row">รวมพร็อพ / รองเท้า</th>
               <td>❌</td>
-              <td>✅</td>
+              <td class="highlight">✅</td>
             </tr>
 
             <tr>
-              <th>รองรับพื้นที่</th>
+              <th scope="row">รองรับพื้นที่</th>
               <td>พื้นที่ส่วนตัว</td>
               <td>พื้นที่สาธารณะ</td>
             </tr>
 
             <tr>
-              <th>นัดรับ</th>
+              <th scope="row">นัดรับ</th>
               <td>❌</td>
-              <td>✅ *บางกรณี</td>
+              <td class="highlight">✅ บางกรณี</td>
             </tr>
 
             <tr>
-              <th>ราคาโดยประมาณ</th>
-              <td>200-400 บาท</td>
-              <td>400-600 บาท</td>
+              <th scope="row">ราคาโดยประมาณ</th>
+              <td>200 – 400 บาท</td>
+              <td class="highlight">400 – 600 บาท</td>
             </tr>
           </tbody>
         </table>

@@ -12,58 +12,74 @@
   </head>
   <body>
     <!-- Header 1.1 + 1.2 -->
-    <header>
+    <header id="header">
       <!-- 1.1 -->
-      <div class="logo">
-        <img src="images/logo.png" alt="logo" class="logo-img" />
-
-        <div>
-          <h1 class="site-title">Haruto CosRent</h1>
-          <p class="site-tagline">เช่าชุดคอสกับ Haruto Chan</p>
+      <div class="header container">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="CosplayRent logo"
+            class="header-logo"
+          />
+          <div class="site-text">
+            <h1 class="site-title">CosplayRent</h1>
+            <p class="site-tagline">ร้านเช่าชุดคอสเพลย์ออนไลน์</p>
+          </div>
         </div>
+        <!-- 1.2 -->
+        <nav aria-label="เมนูหลัก">
+          <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+            <li><a href="services.html">บริการ</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- 1.2 -->
-      <nav aria-label="เมนูหลัก">
-        <ul>
-          <li><a href="index.html">หน้าแรก</a></li>
-          <li><a href="about.html">เกี่ยวกับ</a></li>
-          <li><a href="services.html">บริการ</a></li>
-          <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <!-- Hero Section 1.3 -->
     <main class="container">
+      <!-- Hero Section 1.3 -->
       <section class="hero section">
-        <h2 id="hero-heading">ยินดีต้อนรับสู่ร้าน Haruto CosRent</h2>
+        <div class="section-title">
+          <h2 id="hero-heading">ยินดีต้อนรับสู่ร้าน Haruto CosRent</h2>
+        </div>
         <p>ร้านเช่าชุดคอสเพลย์ราคาน่ารัก พร้อมบริการจำหน่ายชุดวิกมือ2</p>
-        <p><a href="services.html">ดูบริการของเรา</a></p>
+        <p><a href="services.html" class="btn">ดูบริการของเรา</a></p>
       </section>
 
       <!-- Featured services 1.4 -->
-      <section class="featured section services" aria-label="บริการเด่น">
-        <article class="service-card">
-          <h3>เช่าชุดสำหรับเทส</h3>
-          <p>
-            เหมาะสำหรับคอสเพลย์มือใหม่
-            หรือต้องการแต่งคอสเพื่อถ่ายรูปอยู่ในพื้นที่ปิด ราคาเช่าถูกที่สุด!!!
-          </p>
-        </article>
-        <article class="service-card">
-          <h3>เช่าชุดสำหรับไพรเวท</h3>
-          <p>
-            เหมาะสำหรับคอสเพลย์เยอร์ที่ต้องการแต่งคอสเพื่อถ่านงาน คอนเท้น
-            หรือร่วมงานคอสเพลย์ในพื้นที่เปิด
-          </p>
-        </article>
-        <article class="service-card">
-          <h3>ฝากปล่อยเช่า</h3>
-          <p>
-            เหมาะสำหรับผู้ที่มีชุด-วิกคอสเพลย์แต่ไม่ต้องการขาย
-            ทางเรามีบริการดูแลชุด-วิกให้ พร้อมปล่อยเช่าหากำไรให้คุณลูกค้า
-          </p>
-        </article>
+      <section class="section">
+        <div class="section-title">
+          <h2>บริการเด่นของเรา</h2>
+        </div>
+
+        <div class="services" aria-label="บริการเด่น">
+          <article class="service-card">
+            <h3>เช่าชุดสำหรับเทส</h3>
+            <p>
+              เหมาะสำหรับคอสเพลย์มือใหม่
+              หรือต้องการแต่งคอสเพื่อถ่ายรูปอยู่ในพื้นที่ปิด
+              ราคาเช่าถูกที่สุด!!!
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>เช่าชุดสำหรับไพรเวท</h3>
+            <p>
+              เหมาะสำหรับคอสเพลย์เยอร์ที่ต้องการแต่งคอสเพื่อถ่ายงาน คอนเทนต์
+              หรือร่วมงานคอสเพลย์ในพื้นที่เปิด
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>ฝากปล่อยเช่า</h3>
+            <p>
+              สำหรับผู้ที่มีชุดหรือวิกคอสเพลย์ เราช่วยดูแลและปล่อยเช่าให้
+              สร้างรายได้เสริม
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
